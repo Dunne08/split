@@ -16,18 +16,25 @@
 
 <body>
 
-	<div id="container">
-	<div id="image-left-container">
-		<img alt="270x170" class="left-image" src="images/lilkim.jpg"  /> 
+	<div class="container">
+	<div class="imageleftcontainer">
+		<img alt="270x170" class="leftimage leftA" src="https://raw.githubusercontent.com/Dunne08/split/master/images/A.jpg"  /> 
+    		<img alt="270x170" class="leftimage leftB" src="https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/secured-attachments/message/attachments/47d02ee8c535e5b8a05047ded9032099-1533220915532/3.%20B%20components.jpg?__cld_token__=exp=1533223333~hmac=6ccd993d4bed9dcfc1b60de06f11c3df480378d627462de6b84d6a37fa04373f"  /> 
 		  </div>
 
-		  <div id="image-right-container">
-		<img alt="270x170" class="right-image" src="images/lilkim.jpg"  />
+		  <div class="imagerightcontainer">
+		<img alt="C" class="rightimage" src="https://raw.githubusercontent.com/Dunne08/split/master/images/C.jpg"  />
 	</div>
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	 $(".leftA").click(function(){
+        $(".leftB").toggleClass("test");
+    });
 
+</script>
 
 </body>
 
