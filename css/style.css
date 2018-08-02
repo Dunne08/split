@@ -3,39 +3,61 @@ body {
   margin: 0px;
 }
 
-#container {
+.container {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	overflow: hidden;
-	background-color: #000000;
 	margin: 0px;
 }
 
-
-#image-left-container {
+.imageleftcontainer {
 	float: left;
 	width:50%;
 	max-height:100vh;
     margin: 0px;
 	padding: 0px;
+  	background-color: #000000;
 	
 }
 
-.left-image {
+.leftimage {
 	width: 100%;
 }
 
-#image-right-container {
+.imagerightcontainer {
 	float: left;
 	width:50%;	
 
 	max-height:100vh;
     margin: 0px;
 	padding: 0px;
+  position: relative;
 	
 }
 
-.right-image {
+.rightimage {
 	width: 100%;
+  z-index: 1
+  position: relative;
+}
+
+.container .content {
+    display: none;
+    padding : 5px;
+}
+.leftA{
+  z-index: 3;
+  position: relative;
+}
+
+.leftB{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  transition: all 1s;
+}
+.test {
+  left:50%;
 }
